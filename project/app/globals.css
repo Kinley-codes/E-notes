@@ -80,3 +80,39 @@
     @apply bg-background text-foreground;
   }
 }
+/* PDF Viewer Styles */
+.react-pdf__Page {
+  margin: 1rem auto;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.pdf-controls {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.pdf-controls button {
+  padding: 0.5rem 1rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pdf-controls button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.pdf-controls span {
+  margin: 0 1rem;
+  color: #64748b;
+}

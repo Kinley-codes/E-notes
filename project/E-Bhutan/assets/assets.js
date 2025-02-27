@@ -1,5 +1,6 @@
 import brand_img from './brand_img.png'
 import cross_icon from './cross_icon.svg'
+import header_img from './header_img.png'
 import left_arrow from './left_arrow.svg'
 import logo from './logo.svg'
 import logo_dark from './logo_dark.svg'
@@ -11,17 +12,22 @@ import project_img_1 from './project_img_1.jpg'
 import project_img_2 from './project_img_2.jpg'
 import project_img_3 from './project_img_3.jpg'
 import project_img_4 from './project_img_4.jpg'
-import project_img_5 from './project_img_5.jpg'
-import project_img_6 from './project_img_6.jpg'
+import quote_img from './quote.jpg'
 import right_arrow from './right_arrow.svg'
 import star_icon from './star_icon.svg'
-
+import tutor from './tutor.jpg'
+import tutor2 from './tutor2.jpg'
+import tutor3 from './tutor3.jpg'
+import tutor4 from './tutor4.jpg'
+import tutor5 from './tutor5.jpg'
+import tutor6 from './tutor6.jpg'
 export const assets = {
     logo,
     logo_dark,
     cross_icon,
     menu_icon,
     star_icon,
+    header_img,
     brand_img,
     project_img_1,
     project_img_2,
@@ -29,44 +35,45 @@ export const assets = {
     project_img_4,
     left_arrow,
     right_arrow,
+    quote_img,
+    tutor,
+    tutor2,
+    tutor3,
+    tutor4,
+    tutor5,
+    tutor6
 }
 
 export const projectsData = [
     {
-      title: "Skyline Haven",
-      price: "$2,50,000",
-      location: "California",
-      image: project_img_1
+      Name: "Ethan Reynolds",
+      School: "Greefield High School",
+      image: tutor
     },
     {
-      title: "Vista Verde",
-      price: "$2,50,000",
-      location: "San Francisco",
-      image: project_img_2
+      Name: "Sophia Carter",
+      School: "Westwood Academy",
+      image:tutor2
     },
     {
-      title: "Serenity Suites",
-      price: "$2,50,000",
-      location: "Chicago",
-      image: project_img_3
+      Name: "Serenity Suites",
+      School: "Maple Ridge Secondary",
+      image: tutor3
     },
     {
-      title: "Central Square",
-      price: "$2,50,000",
-      location: "Los Angeles",
-      image: project_img_4
+      Name: "Central Square",
+      School: "Riverdale International School",
+      image: tutor4
     },
     {
-      title: "Vista Verde",
-      price: "$2,50,000",
-      location: "San Francisco",
-      image: project_img_5
+      Name: "Vista Verde",
+      School: "San Francisco",
+      image: tutor5
     },
     {
-      title: "Serenity Suites",
-      price: "$2,50,000",
-      location: "Chicago",
-      image: project_img_6
+      Name: "Serenity Suites",
+      School: "Chicago",
+      image: tutor6
     },
     
   ];
