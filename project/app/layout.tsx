@@ -1,5 +1,4 @@
-
-import Auth from '@/app/auth/auth'; // Import Auth component
+import Auth from '@/app/auth/auth';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import { ThemeProvider } from "@/components/theme-provider";
@@ -23,19 +22,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta name="grammarly-disable" content="true" />
-      </head>
-      <body className={inter.className}>
+    <html lang="en" className="light" style={{ colorScheme: "light" }} spellCheck="false" data-ms-editor="true">
+      <body className="light">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false} // Disables automatic system theme switching
           disableTransitionOnChange
         >
           <Header />
-          <Auth />  {/* Now using the client-only authentication component */}
+          <Auth />
           <main className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
@@ -43,3 +39,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

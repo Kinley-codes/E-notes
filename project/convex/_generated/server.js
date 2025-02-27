@@ -1,4 +1,3 @@
-"use client";
 /* eslint-disable */
 /**
  * Generated utilities for implementing server-side Convex query and mutation functions.
@@ -12,11 +11,11 @@
 import {
   actionGeneric,
   httpActionGeneric,
+  queryGeneric,
+  mutationGeneric,
   internalActionGeneric,
   internalMutationGeneric,
   internalQueryGeneric,
-  mutationGeneric,
-  queryGeneric,
 } from "convex/server";
 
 /**

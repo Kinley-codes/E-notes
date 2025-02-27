@@ -46,6 +46,7 @@ export default function Header() {
             <Button variant="outline" size="icon">
               <ShoppingCart className="h-4 w-4" />
             </Button>
+
             <Button>Sign In</Button>
           </div>
 
