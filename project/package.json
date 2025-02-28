@@ -2,10 +2,13 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
-  
   "scripts": {
+
+  "build": "next build",
+  "export": "next export",
+  "deploy": "gh-pages -d out",
     "dev": "next dev",
-    "build": "next build && next export",
+  
     "start": "next start",
     "lint": "next lint",
     "prisma:generate": "prisma generate",
@@ -76,6 +79,7 @@
   },
   "devDependencies": {
     "@types/node": "22.10.2",
+    "gh-pages": "^6.3.0",
     "prisma": "^5.11.0",
     "typescript": "5.7.2"
   },
