@@ -22,11 +22,13 @@ const blogPosts = [
 ];
 
 interface BlogPostPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
-const BlogPostPage: FC<BlogPostPageProps> = ({ params }) => {
-  const post = blogPosts.find((post) => post.id === params.id);
+const BlogPostPage: FC<BlogPostPageProps> = async ({ params }) => {
+  const { id } = await params; // Await the params if it's a Promise
+
+  const post = blogPosts.find((post) => post.id === id);
 
   if (!post) {
     return notFound(); // Show a 404 page if the post is not found
