@@ -6,5 +6,8 @@ const nextConfig = {
   },
   images: { unoptimized: true },
 };
+module.exports = {
+  trailingSlash: true,
+};
 
 module.exports = nextConfig;
