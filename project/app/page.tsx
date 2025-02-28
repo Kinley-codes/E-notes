@@ -1,5 +1,5 @@
 "use client";
-import AboutAi from "@/components/aboutAi";
+import AboutAi from "@/components/AboutAi";
 import Contact from "@/components/contact";
 import Projects from "@/components/Projects";
 import Tutor from "@/components/tutor";
