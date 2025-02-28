@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { FC } from 'react';
 
 // Sample blog data (replace this with actual database fetching logic)
 const blogPosts = [
@@ -20,11 +21,11 @@ const blogPosts = [
   },
 ];
 
-interface BlogPostProps {
+interface BlogPostPageProps {
   params: { id: string };
 }
 
-export default function BlogPostPage({ params }: BlogPostProps) {
+const BlogPostPage: FC<BlogPostPageProps> = ({ params }) => {
   const post = blogPosts.find((post) => post.id === params.id);
 
   if (!post) {
@@ -54,4 +55,6 @@ export default function BlogPostPage({ params }: BlogPostProps) {
       </div>
     </div>
   );
-}
+};
+
+export default BlogPostPage;
